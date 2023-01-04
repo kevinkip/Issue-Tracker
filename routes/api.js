@@ -202,6 +202,7 @@ module.exports = function (app) {
               res.json({ error: "could not delete", _id: issueData._id });
             } else {
               res.json({ result: "successfully deleted", _id: issueData._id});
+              return;
             }
           })
         }
